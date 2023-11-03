@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFC436"
+        >
+
+        <View
+            android:id="@+id/btnbackdetail"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/baseline_arrow_back_ios_new_15"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/juduldetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery Button ID"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/detailcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="55dp"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/gambar1"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/gambar2"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/gambar3"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"
+                />
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btndeskripsi"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:textColor="#000"
+            android:background="#FFC436"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnmaps"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Peta Lokasi"
+            android:textColor="#fff"
+            android:background="#000"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
