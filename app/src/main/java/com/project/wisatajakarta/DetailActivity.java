@@ -35,7 +35,8 @@ public class DetailActivity extends AppCompatActivity {
         btnMaps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=("+ tujuan + ")"));
+                Intent intent = new Intent(DetailActivity.this, LokasiActivity.class);
+                intent.putExtra("btn_id", buttonId);
                 startActivity(intent);
             }
         });

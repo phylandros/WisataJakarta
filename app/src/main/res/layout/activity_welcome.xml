@@ -12,38 +12,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_weight="1"
+        android:layout_marginBottom="50dp"
         >
 
         <TextView
-            android:id="@+id/txwelcom"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Welcome"
-            android:layout_marginTop="95dp"
             android:textColor="#000"
-            android:gravity="center"
-            android:textSize="30dp"
+            android:textSize="35dp"
             android:textStyle="bold"
-            android:fontFamily="@font/luckiestguy_regular"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="To"
-            android:gravity="center"
-            android:textColor="#000"
-            android:textSize="25dp"
-            android:textStyle="italic"
-            />
+            android:layout_gravity="center"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/luckiestguy_regular"/>
 
         <View
+            android:layout_width="370dp"
+            android:layout_height="230dp"
             android:layout_gravity="center"
-            android:layout_width="250dp"
-            android:layout_height="150dp"
+            android:layout_marginTop="-45dp"
             android:background="@drawable/applogo"/>
-
     </LinearLayout>
     <LinearLayout
         android:id="@+id/layoutButtons"
@@ -58,8 +46,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Mulai"
-            android:textColor="#000"
-            android:background="#FFC436"
+            android:textColor="#FFF"
+            android:background="#1f4172"
             android:textSize="20dp"/>
 
     </LinearLayout>

@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
 
     LinearLayout cvMonas, cvKotaTua, cvTMII, cvAncol, cvKerakTelor, cvSotoBetawi, cvAsinanBetawi, cvSayurBabanci;
+    ViewFlipper viewFlipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         cvSotoBetawi = findViewById(R.id.btnsotobetawi);
         cvAsinanBetawi =findViewById(R.id.btnasinanbetawi);
         cvSayurBabanci = findViewById(R.id.btnsayurbabanci);
+
+        viewFlipper = findViewById(R.id.banner);
+        viewFlipper.startFlipping(); // Untuk memulai otomatis berganti
 
         cvMonas.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,9 +85,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
+
     private void openDetailActivity(String buttonId) {
         Intent intent = new Intent(MainActivity.this, DetailActivity.class);
         intent.putExtra("btn_id", buttonId);

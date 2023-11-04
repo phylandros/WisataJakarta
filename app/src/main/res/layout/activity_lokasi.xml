@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LokasiActivity"
+    android:background="#FFF"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DetailActivity"
-    android:background="#FFF">
+    android:layout_height="match_parent">
 
     <LinearLayout
+        android:layout_alignParentTop="true"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_alignParentTop="true"
         android:background="#1f4172"
         android:orientation="horizontal">
 
         <View
-            android:id="@+id/btnbackdeskripsi"
+            android:id="@+id/btnbacklokasi"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_gravity="center"
@@ -34,35 +33,27 @@
             >
 
             <TextView
-                android:id="@+id/juduldeskripsi"
+                android:id="@+id/judullokasi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Deskripsi Button ID"
+                android:text="Peta Lokasi Button ID"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                android:textColor="#FFF"
+                android:textColor="#fff"
                 android:layout_gravity="center"
                 />
         </RelativeLayout>
-
-
     </LinearLayout>
 
-    <ScrollView
-        android:id="@+id/deskripsicontent"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
-        android:background="#EEE"
-        >
-
-        <TextView
-            android:id="@+id/textdeskripsi"
+        android:layout_below="@+id/toolbar">
+        <WebView
+            android:id="@+id/webView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="25dp"
-            android:justificationMode="inter_word"
-            android:textColor="#000"/>
-
-    </ScrollView>
+            android:layout_height="match_parent" />
+    </LinearLayout>
 </RelativeLayout>
+
+
