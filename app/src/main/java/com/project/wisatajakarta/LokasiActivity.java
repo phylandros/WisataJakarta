@@ -55,7 +55,7 @@ public class LokasiActivity extends AppCompatActivity {
         } else if ("Kota Tua".equals(buttonId)) {
             tujuan = "Kawasan Wisata Kota Tua Jakarta";
         } else if ("TMII".equals(buttonId)) {
-            tujuan = buttonId;
+            tujuan = "Taman Mini Indonesia Indah";
         } else if ("Ancol".equals(buttonId)) {
             tujuan = buttonId;
         } else if ("Kerak Telor".equals(buttonId)) {
